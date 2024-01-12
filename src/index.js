@@ -13,6 +13,7 @@ dotenv.config({
     try{
      const responsed = await  mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`)
 console.log ( ` data base are connecte ,${responsed.connection.host}`)
+console.log ("connecte")
         app.on ("error", (error)=>{
             console.log("error",error);
            
